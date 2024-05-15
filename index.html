@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<script>
+// Call myFunction when the page loads
+window.onload = myFunction;
+
+function myFunction() {
+  alert("hey wazza blud quantum is in beta also join the cord https://discord.gg/C8nXfGAr");
+}
+</script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quantum</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      text-align: center;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+      background-color: #1e1e1e;
+      font-weight: bold;
+      color: #555; /* Set text color to gray */
+    }
+
+    .header {
+      padding: 20px 10px; /* Adjust top padding */
+      color: #555;
+      font-size: 24px; /* Adjust font size */
+      font-weight: bold;
+      opacity: 0; /* Initially hidden */
+      animation: fadeInHeader 1s forwards; /* Fade-in animation */
+    }
+
+    @keyframes fadeInHeader {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    .vault-container {
+      position: relative;
+      width: 400px;
+      height: 400px;
+      margin: 20px auto;
+    }
+
+    .vault-background {
+      background-image: url('vault_background.jpg');
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+    }
+
+    .progress-box {
+      display: none; /* Hide progress box */
+    }
+
+    .vault-wheel {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 200px;
+      height: 200px;
+      border: 10px solid #222;
+      border-radius: 50%;
+      box-sizing: border-box;
+      background-image: url('https://clipartcraft.com/images/earth-transparent-animated-gif-8.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      animation: rotate 2s linear infinite;
+    }
+
+    @keyframes rotate {
+      to {
+        transform: translate(-50%, -50%) rotate(360deg);
+      }
+    }
+
+    /* Styling for the search box */
+    form[name="cse"] {
+      position: absolute;
+      top: 90px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1;
+      opacity: 0;
+      animation: fadeIn 1s forwards;
+    }
+
+    @keyframes fadeIn {
+      from {
+        top: 40px;
+        opacity: 0;
+      }
+      to {
+        top: 80px;
+        opacity: 1;
+      }
+    }
+
+    form[name="cse"] input[type="text"] {
+      width: 250px;
+      padding: 10px;
+      border: none;
+      border-radius: 25px; /* Rounded corners */
+      background-color: #333;
+      color: white;
+    }
+
+    form[name="cse"] input[type="submit"] {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 25px; /* Rounded corners */
+      cursor: pointer;
+    }
+
+    form[name="cse"] input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+
+    .button-container {
+      margin-top: 01px;
+    }
+
+    .button {
+      display: inline-block;
+      overflow: hidden;
+      border-radius: 10px; /* Adjust the curve as needed */
+      cursor: pointer;
+      transition: all 0.3s ease;
+      margin: 10px;
+    }
+
+    .button img {
+      display: block;
+      width: 50px; /* Adjust the size as needed */
+      height: auto;
+    }
+
+    .button:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="header" style="padding-top: 30px;">Quantum</div>
+  
+  <!-- Modified search box with JavaScript -->
+  <form name="cse" id="searchbox_demo" onsubmit="return submitUrl()">
+    <input type="text" id="urlInput" placeholder="" style="border-radius: 25px; padding: 10px;" />
+    <input type="submit" value="Go" style="border-radius: 25px; padding: 10px 20px; background-color: #007bff; color: white; border: none; cursor: pointer;" />
+  </form>
+
+  <div class="vault-container">
+    <div class="vault-background"></div>
+    <div class="vault-wheel"></div>
+    <div class="progress-box">Progress: </div>
+  </div>
+
+  <!-- First Row of Buttons -->
+  <div class="button-container">
+    <a class="button" onclick="blank('https://sussygamedeveloper.github.io/FNAF1/');">
+      <img src="https://th.bing.com/th/id/OIP.YKYIiqVU1Tp17waNwI8uVAAAAA?rs=1&pid=ImgDetMain" alt="FNAF 1">
+    </a>
+    <a class="button" onclick="blank('https://gamedump.github.io/slope/');">
+      <img src="https://th.bing.com/th/id/R.8612001a80ea5f6720b1a1c11687af88?rik=WyQ6HIc0e6vkSg&pid=ImgRaw&r=0" alt="SLOPE 1">
+    </a>
+    <a class="button" onclick="blank('https://sevenworksdev.github.io/SM64-JS/');">
+      <img src="https://th.bing.com/th/id/OIP.BvriPJra1wbseYngRo0dpwAAAA?rs=1&pid=ImgDetMain" alt="SM64">
+    </a>
+    <a class="button" onclick="blank('https://ttfq.github.io/retrobowl//');">
+      <img src="https://th.bing.com/th/id/R.9d0bdbd48b96dc29e6dc015082209462?rik=XlC3BCr1QNkK4w&pid=ImgRaw&r=0" alt="RETRO BOWL">
+    </a>
+    <a class="button" onclick="blank('https://ovo-alpha.vercel.app/versions/1.4.4b/index.html');">
+      <img src="https://play-lh.googleusercontent.com/v7KwGdPjJGjJjRXn46sck4DwDBdKSeRzGN44CjiXUtKV0jjOi51Bt4wcXud0m-SkXg=w240-h480-rw" alt="ovo">
+    </a>
+<a class="button" onclick="blank('https://hypackel.github.io/projects/subway-surfers/index.html');">
+      <img src="https://th.bing.com/th/id/OIP.4ZiZ1PJuNvypVbkmaiua4gHaHa?rs=1&pid=ImgDetMain" alt="FNAF movie">
+    </a>
+<a class="button" onclick="blank('https://owen.raandom.info/uv/service/hvtrs8%2F-bkg%2Cfklgdktahqtwfd.oe-b12-YinNKDfuakRgIjQVg%60f%2Cmr4');">
+      <img src="https://th.bing.com/th/id/OIP.uN2kUJQ7lL0adPDQGxlf-QAAAA?w=420&h=420&rs=1&pid=ImgDetMain" alt="fnaf movie">
+    </a>
+   <a class="button" onclick="blank('https://krunker.io/');">
+      <img src="https://th.bing.com/th/id/R.87fef7696039465f81285670cd7b7cf7?rik=0AphGmT7SA61yw&pid=ImgRaw&r=0" alt="FNAF 1">
+    </a>
+   <a class="button" onclick="blank('https://klksd.vercel.app/static/tiw/hvtrs8%2F-wuw%2Cgmoelg.aoo%2Fue%60hr');">
+      <img src="https://www.shareicon.net/data/512x512/2016/07/10/119930_google_512x512.png" alt="FNAF 1">
+    </a>
+  </div>
+
+  <!-- Second Row of Buttons -->
+  <div class="button-container">
+    <a class="button" onclick="blank('https://owen.raandom.info/uv/service/hvtrs8%2F-bkg%2Cfklgdktahqtwfd.oe-b13-XIhRsuoERFmZSldWgAf%2Cmr4');">
+      <img src="https://images2.fanpop.com/images/photos/7000000/Spongebob-Icon-spongebob-squarepants-7039739-100-100.jpg" alt="Sponge">
+    </a>
+    <a class="button" onclick="blank('https://sonic-mania-web2.vercel.app/RSDKv5.html');">
+      <img src="https://th.bing.com/th/id/R.2b10f121743af7b35a09743345649982?rik=8rgBTShBw3J2Mw&pid=ImgRaw&r=0" alt="mania">
+    </a>
+    <a class="button" onclick="blank('https://tylerpalko.github.io/gamehub/basketrandom/');">
+      <img src="https://th.bing.com/th/id/R.3cc7b68d78f953133c4eae9a97b874dd?rik=Qu5mbezd5qr32Q&pid=ImgRaw&r=0" alt="basket">
+    </a>
+    <a class="button" onclick="blank('https://klksd.vercel.app/static/tiw/hvtrs8%2F-sklgnvsraaeoapile%2Ccmm-');">
+      <img src="https://th.bing.com/th/id/OIP.yp_k2YKOplhIXyEvRJEOJwHaHa?rs=1&pid=ImgDetMain" alt="doom">
+    </a>
+    <a class="button" onclick="blank('https://sanicbtw.github.io/FNF-PsychEngine-0.6-HTML5/');">
+      <img src="https://th.bing.com/th/id/R.7936acf97d736dbfd5613c09a3f6acfa?rik=KxpihNWAM93B5w&pid=ImgRaw&r=0" alt="fnf">
+    </a>
+    <a class="button" onclick="blank('https://hotamago.github.io/sans/');">
+      <img src="https://play-lh.googleusercontent.com/T08jAj6GRGQGPOw41mQrvM_bz0ZFbqtZVL8YMbLoAy-Qu6zmLwfV7BNrPCPpUX-ZWQ" alt="sans">
+    </a>
+<a class="button" onclick="blank('https://run3unblocked.github.io/');">
+      <img src="https://th.bing.com/th/id/OIP.OHAlORUEIX0Bp7vCo4CrjgAAAA?w=170&h=170&rs=1&pid=ImgDetMain" alt="run 3 ">
+    </a>
+<a class="button" onclick="blank('https://cloudfuntime.vercel.app/clients.html');">
+      <img src="https://th.bing.com/th/id/R.281a0334856a6d8e79f15aefa0ef81cf?rik=eigkhhOk15rklw&pid=ImgRaw&r=0" alt="run 3 ">
+    </a>
+<a class="button" onclick="blank('https://stumbleguys.com/play/');">
+      <img src="https://th.bing.com/th/id/OIP.O70rxO8mXrmYQZrOCrndkAHaHa?rs=1&pid=ImgDetMain" alt="run 3 ">
+    </a>
+
+  </div>
+
+  <script>
+    // Array of random placeholder texts
+    var placeholders = [
+      "Adam is a ⓢⓚⓘⓓ",
+      "What the 卐",
+      "I Love 🧽",
+      "Hi 🅱ryce",
+      "Me When Im: ☺"
+    ];
+
+    // Function to set random placeholder text
+    function setRandomPlaceholder() {
+      var randomIndex = Math.floor(Math.random() * placeholders.length);
+      document.getElementById("urlInput").placeholder = placeholders[randomIndex];
+    }
+
+    // Call the function to set random placeholder text
+    setRandomPlaceholder();
+
+    function submitUrl() {
+      var input = document.getElementById("urlInput").value;
+      var url;
+
+      if (isValidURL(input)) {
+        url = addHttp(input);
+      } else {
+        url = "https://www.bing.com/search?q=" + input;
+      }
+
+      blank(url);
+      return false; // Prevent default form submission behavior
+    }
+
+    // Function to check if a string is a valid URL
+    function isValidURL(string) {
+      try {
+        new URL(string);
+        return true;
+      } catch (_) {
+        return false;
+      }
+    }
+
+    // Function to add "https://" if not present
+    function addHttp(url) {
+      if (!url.match(/^https?:\/\//i)) {
+        url = 'https://' + url;
+      }
+      return url;
+    }
+
+    // Function to open URL in a new window
+    function blank(url) {
+      var win = window.open('', '', 'width=9000,height=9000,top=9000,left=9000');
+      win.document.body.style.margin = '0';
+      win.document.body.style.height = '100vh';
+      var iframe = win.document.createElement('iframe');
+      iframe.style.border = 'none';
+      iframe.style.width = '100%';
+      iframe.style.height = '100%';
+      iframe.style.margin = '0';
+      iframe.src = url;
+      win.document.body.appendChild(iframe);
+      var fav = win.document.createElement('link');
+      fav.setAttribute("rel", "icon");
+      fav.setAttribute("type", "image/x-icon");
+      fav.setAttribute("href", "https://ssl.gstatic.com/classroom/favicon.png");
+      win.document.querySelector("head").appendChild(fav);
+      var tit = win.document.createElement('title');
+      tit.innerHTML = "Home";
+      win.document.querySelector("head").appendChild(tit);
+    }
+  </script>
+
+  <script src='https://cdn.jsdelivr.net/npm/@widgetbot/crate@3' async defer>
+    new Crate({
+        server: '1237036732482850887', // quantum sigma grind🤑
+        channel: '1237036733439279117' // #general
+    })
+  </script>
+</body>
+</html>
